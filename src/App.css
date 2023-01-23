@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 20px;
+}
+
+/* div {
+  box-sizing: border-box;
+} */
+
+.blogList {
+  padding: 10px;
+  padding-left: 20px;
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
+
+.blogList>h4 {
+  margin-bottom: 10px;
+}
+
+.blogList>p {
+  margin-bottom: 10px;
+}
+
+/* h1 */
+.blogTitle {
+  display: flex;
+  background: black;
+  width: 100%;
   color: white;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.modal {
+  margin-top: 10px;
+
+  background: #eee;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal>h2 {
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.modal>h3 {
+  padding: 10px;
+  padding-top: 0;
+}
+
+.modal>button {
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 5px;
 }

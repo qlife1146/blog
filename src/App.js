@@ -27,7 +27,29 @@ function App() {
     return (
         <div>
             <h1 className="blogTitle">Blog</h1>
-            
+            <form>
+                <input
+                    value={titleText || ""}
+                    onChange={(e) => {
+                        console.log(e.target.value);
+                        setTitleText(e.target.value);
+                    }}
+                />
+                <button
+                    type="submit"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        let titleCopy = [...title];
+                        let likeCopy = [...like];
+                        titleCopy.push(titleText);
+                        likeCopy.push(0);
+                        setTitle(titleCopy);
+                        setLike(likeCopy);
+                    }}
+                >
+                    Insert
+                </button>
+            </form>
             {title.map(function (a, i) {
                 return (
                     <div
